@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Somma e Media di un Array</title>
+</head>
+<body>
+
+  <h2>Somma e media di 5 numeri</h2>
+  <div id="output"></div>
+
+  <script>
+    
+    let numeri = [10, 20, 30, 40, 50];
+
+    let somma = 0;
+
+
+    for (let i = 0; i < numeri.length; i++) {
+      somma += numeri[i];
+    }
+
+    
+    let media = somma / numeri.length;
+
+ 
+    document.getElementById("output").innerHTML =
+      "Somma: " + somma + "<br>" +
+      "Media: " + media;
+  </script>
+
+</body>
+</html>

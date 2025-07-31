@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .big{
+            font-size:5rem;
+        }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const rootElement=document.querySelector("#root");
+        const root =ReactDOM.createRoot(rootElement);
+        console.log(rootElement);
+        const e = React.createElement
+        const h1= e(
+            "h1",
+        {key:"h1",
+          style:{
+            color: "red",
+            border:"1px #000 solid",
+            padding:"5px"
+          },
+          className:"big",
+          onClick: function(el)
+            {console.log(el.target);
+
+          },
+        },
+        "Primo tag h1 con react"
+      );   
+        
+    
+    const ul = e("ul",{key:"Ul"},[
+        e("li",{key:"php"},"PHP"),
+        e("li",{key:"js"},"javascript"),
+        e("li",{key:"python"},"Python")
+    ]);
+    const main = e("main",{},[h1,ul])
+        root.render(main)
+    </script>
+
+</body>
+</html>

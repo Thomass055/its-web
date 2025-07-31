@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contare da 0 a 20 con passo 2</title>
+</head>
+<body>
+
+  <h2>Con il ciclo FOR:</h2>
+  <div id="outputFor"></div>
+
+  <h2>Con il ciclo WHILE:</h2>
+  <div id="outputWhile"></div>
+
+  <script>
+    // Ciclo FOR 
+    let testoFor = "";
+    for (let i = 0; i <= 20; i += 2) {
+      testoFor += i + "<br>";
+    }
+    document.getElementById("outputFor").innerHTML = testoFor;
+
+    // Ciclo WHILE 
+    let testoWhile = "";
+    let j = 0;
+    while (j <= 20) {
+      testoWhile += j + "<br>";
+      j += 2;
+    }
+    document.getElementById("outputWhile").innerHTML = testoWhile;
+  </script>
+
+</body>
+</html>

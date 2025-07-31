@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Numero più grande</title>
+</head>
+<body>
+
+  <h2>Numero più grande in un array di 7 numeri</h2>
+  <div id="output"></div>
+
+  <script>
+    let numeri = [12, 45, 7, 89, 23, 56, 31];
+
+
+    let max = numeri[0];
+
+  
+    for (let i = 1; i < numeri.length; i++) {
+      if (numeri[i] > max) {
+        max = numeri[i];
+      }
+    }
+
+
+    document.getElementById("output").innerHTML = "Il numero più grande è: " + max;
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doppio dei numeri da 0 a 20 con passo 2</title>
+</head>
+<body>
+
+  <h2>Con il ciclo FOR (doppio):</h2>
+  <div id="outputFor"></div>
+
+  <h2>Con il ciclo WHILE (doppio):</h2>
+  <div id="outputWhile"></div>
+
+  <script>
+    // Ciclo FOR: stampo il doppio dei numeri da 0 a 20 con passo 2
+    let testoFor = "";
+    for (let i = 0; i <= 20; i += 2) {
+      testoFor += (i * 2) + "<br>";
+    }
+    document.getElementById("outputFor").innerHTML = testoFor;
+
+    // Ciclo WHILE: stampo il doppio dei numeri da 0 a 20 con passo 2
+    let testoWhile = "";
+    let j = 0;
+    while (j <= 20) {
+      testoWhile += (j * 2) + "<br>";
+      j += 2;
+    }
+    document.getElementById("outputWhile").innerHTML = testoWhile;
+  </script>
+
+</body>
+</html>

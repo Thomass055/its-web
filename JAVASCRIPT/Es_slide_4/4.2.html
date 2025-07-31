@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Numeri da 0 a 10</title>
+</head>
+<body>
+
+  <h2>Con il ciclo FOR:</h2>
+  <div id="outputFor"></div>
+
+  <h2>Con il ciclo WHILE:</h2>
+  <div id="outputWhile"></div>
+
+  <script>
+    // Ciclo FOR
+    let testoFor = "";
+    for (let i = 0; i <= 10; i++) {
+      testoFor += i + "<br>";
+    }
+    document.getElementById("outputFor").innerHTML = testoFor;
+
+    // Ciclo WHILE
+    let testoWhile = "";
+    let j = 0;
+    while (j <= 10) {
+      testoWhile += j + "<br>";
+      j++;
+    }
+    document.getElementById("outputWhile").innerHTML = testoWhile;
+  </script>
+
+</body>
+</html>
+

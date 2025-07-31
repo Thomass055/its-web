@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pari e Dispari</title>
+</head>
+<body>
+
+  <h2>Conteggio di numeri pari e dispari</h2>
+  <div id="output"></div>
+
+  <script>
+
+    let numeri = [4, 7, 12, 9, 3, 6, 8, 11, 14, 1];
+
+    let pari = 0;
+    let dispari = 0;
+
+    for (let i = 0; i < numeri.length; i++) {
+      if (numeri[i] % 2 === 0) {
+        pari++;
+      } else {
+        dispari++;
+      }
+    }
+
+   
+    document.getElementById("output").innerHTML =
+      "Nell'array ci sono " + pari + " numeri pari e " + dispari + " numeri dispari.";
+  </script>
+
+</body>
+</html>

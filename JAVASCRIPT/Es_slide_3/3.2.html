@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calcolo Età</title>
+</head>
+<body>
+
+  <h2>Calcolo Età e Anni per arrivare a 100</h2>
+
+  <div id="annoCorrente"></div>
+  <div id="eta"></div>
+  <div id="anniMancanti"></div>
+
+  <script>
+    let annoCorrente = 2025;
+    let annoNascita = 2005; // Cambia questo numero con il tuo anno di nascita
+
+    let eta = annoCorrente - annoNascita;
+    let anniMancanti = 100 - eta;
+
+    document.getElementById("annoCorrente").innerHTML = "Anno corrente: " + annoCorrente;
+    document.getElementById("eta").innerHTML = "Età: " + eta + " anni";
+    document.getElementById("anniMancanti").innerHTML = "Anni per arrivare a 100: " + anniMancanti;
+  </script>
+
+</body>
+</html>
